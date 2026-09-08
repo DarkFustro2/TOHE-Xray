@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: tohe-xray-compiler
+    env: python
+    buildCommand: "apt-get update && apt-get install -y dotnet-sdk-6.0 && pip install flask"
+    startCommand: "python app.py"
